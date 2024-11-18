@@ -9,7 +9,7 @@ img[alt='logo'] {
 }
 
 article:nth-of-type(1) {
-    top: -700px;
+    top: -50vw;
     right: 4vw;
     color: white;
 }

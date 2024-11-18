@@ -1,0 +1,31 @@
+/* файл с обобщёнными стилями */
+
+* { /* Базовые текстовые стили */
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 300;
+    text-align: right;
+}
+
+div {
+    height: fit-content;
+}
+
+div * {
+    position: relative;
+}
+
+img {
+    width: 100%;
+    object-fit: contain;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+article * {
+    margin: 10px 0;
+}

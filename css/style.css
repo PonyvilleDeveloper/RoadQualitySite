@@ -10,24 +10,31 @@ img[alt='logo'] {
 
 article:nth-of-type(1) {
     top: -50vw;
-    right: 4vw;
+    right: 10vw;
     color: white;
 }
 
 h1 {
     font-weight: 900;
     font-size: 6vw;
+    line-height: 6.0vw;
+    margin-bottom: 2.3vw;
 }
 
 h1 + p {
-    font-size: 2.5vw;
+    font-size: 2.85vw;
+    line-height: 2.4vw;
+}
+
+p {
+    font-weight: 100;
+    margin-bottom: 4.5vw;
 }
 
 a#quick_order {
     font-weight: 700;
-    font-size: 3.25vw;
+    font-size: 2.5vw;
     border: 4px solid #C393FF;
     border-radius: 20px;
-    padding: 10px 50px;
-    margin-top: 300px;
+    padding: 1.0vw 4.5vw;
 }

@@ -38,3 +38,80 @@ a#quick_order {
     border-radius: 20px;
     padding: 1.0vw 4.5vw;
 }
+
+/*second page styles*/
+
+.truck2 {
+    width: 37vw;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.page2 h1 {
+    font-size: 5.5vw;
+    right: 10.0vw;
+    color: #5344E1;
+    margin-top: 120px;
+    margin-bottom: 5.0vw;
+}
+
+.container{
+    right: 10.0vw;
+}
+
+.container h3{
+    font-weight: 800;
+    font-size: 2.6vw;
+    right: 2.5vw;
+    top: 0vw;
+}
+
+.container img[alt="Полка1"]{
+    position: absolute;
+    top: -20%;
+    right: -3%;
+    width: 45.0vw;
+}
+
+.container img[alt="Полка2"]{
+    position: absolute;
+    top: -20%;
+    right: -3%;
+    width: 80.0vw;
+}
+
+.container img[alt="Line1"] {
+    top: -60px;
+    right: 1.5vw;
+    width: 25vw;
+}
+
+.container img[alt="Line2"] {
+    top: -3.8vw;
+    right: 1.5vw;
+    width: 33vw;
+}
+.content-block-1 p {
+    font-weight: 300;
+    font-size: 2.1vw;
+    right: 2.5vw;
+    top: -5.0vw;
+    line-height: 2.4vw;
+}
+
+.content-block-2 {
+    top: -2.8vw;
+}
+
+.content-block-2 h3{
+    top: -0.5vw;
+}
+
+.content-block-2 p {
+    font-weight: 300;
+    font-size: 2.1vw;
+    right: 2.5vw;
+    top: -5.5vw;
+    line-height: 2.2vw;
+}

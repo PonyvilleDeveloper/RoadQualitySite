@@ -8,6 +8,10 @@ img[alt='logo'] {
     width: 15vw;
 }
 
+div#main {
+    height: auto;
+}
+
 article:nth-of-type(1) {
     top: -50vw;
     right: 10vw;
@@ -40,10 +44,19 @@ a#quick_order {
 }
 
 /*second page styles*/
+/*this is a shit epta, but coolest shit what i see ever*/
+.page2 {
+    position: relative;
+    border-top: 10px solid transparent;
+    border-image: linear-gradient(to right, #7664b6 0%, #937fd9 7%, #6856a9 20%, #5e5778 34%, white 35.75%);
+    -moz-border-image: linear-gradient(to right, #7664b6 0%, #937fd9 7%, #6856a9 20%, #5e5778 34%, white 35.75%);
+    -webkit-border-image: linear-gradient(to right, #7664b6 0%, #937fd9 7%, #6856a9 20%, #5e5778 34%, white 35.75%);
+    border-image-slice: 1;
+}
 
 .truck2 {
-    width: 37vw;
     position: absolute;
+    width: 37vw;
     left: 0;
     top: 0;
 }
@@ -52,8 +65,9 @@ a#quick_order {
     font-size: 5.5vw;
     right: 10.0vw;
     color: #5344E1;
-    margin-top: 120px;
+    margin-top: 0;
     margin-bottom: 5.0vw;
+    padding-top: 100px;
 }
 
 .container{
@@ -69,14 +83,12 @@ a#quick_order {
 
 .container img[alt="Полка1"]{
     position: absolute;
-    top: -20%;
     right: -3%;
     width: 45.0vw;
 }
 
 .container img[alt="Полка2"]{
     position: absolute;
-    top: -20%;
     right: -3%;
     width: 80.0vw;
 }
@@ -114,4 +126,69 @@ a#quick_order {
     right: 2.5vw;
     top: -5.5vw;
     line-height: 2.2vw;
+}
+
+/*third page styles*/
+
+.page3 {
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.page3 img[alt = "wave-line"] {
+    right: 0;
+    top: 4vw;
+    position: absolute;
+}
+
+.page3 h1{
+    color: #8142CF;
+    text-align: left;
+    font-size: 5.5vw;
+    left: 5%;
+    
+}
+
+.whiteblock h3 {
+    text-align: center;
+    font-size: 2vw;
+    font-weight: 700;
+    line-height: 2vw;
+}
+
+.whiteblock p {
+    text-align: center;
+    font-size: 1.6vw;
+    line-height: 1.5vw;
+}
+
+.whiteblock:not(h3, p) {
+    padding: 80px 22px 0 22px;
+    width: 25vw;
+    background-color: rgb(255, 255, 255, 0.5);
+    border-radius: 30px;
+    box-shadow: 0px 15px 30px rgb(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+    z-index:1;
+}
+.content-container {
+    display: flex;
+    justify-content: center;
+    gap: 3vw;
+    margin-top: 12vw;
+}
+
+.whiteblock-2{
+    margin-top: 8vw;
+}
+
+.whiteblock {
+    position: relative;
+}
+
+.whiteblock img {
+    width: 120px;
+    position: absolute;
+    left: -6%;
+    top: -6%;
 }

@@ -5,16 +5,8 @@
         <link rel="stylesheet" href="./css/style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Road Quality</title>
-        <script>
-            function set_size() {                
-                var main_page = document.getElementById("main");
-                var main_backgrnd = document.getElementsByTagName("img")[0];
-                main_page.style.height = `${main_backgrnd.height}px`;
-                console.log(`Main height set = ${main_backgrnd.height}`);
-            }
-        </script>
     </head>
-    <body onload="set_size()">
+    <body>
         <div id="main">
             <img src="./img/Фон главной.png" alt="main-background">
             <img src="./img/Лого.png" alt="logo">
@@ -28,17 +20,17 @@
             <img class="truck2" src="./img/Фура2.png" alt="Фура неоновая кибертрак">
             <h1 class="title">ЧТО МЫ ТАКОЕ?</h1>
             <div class="container">
-                <div class="content-block-1">
                     <img src="./img/Полка21.png" alt="Полка1">
+                <div class="content-block">
                     <h3>ROAD QUALITY</h3>
                     <img src="./img/Line 1.png" alt="Line1">
-                    <p>Система для повышения</br>безопасности, экономности и</br>эффективности грузоперевозок</p>
+                    <p>Система для повышения<br>безопасности, экономности и<br>эффективности грузоперевозок</p>
                 </div>
-                <div class="content-block-2">
                     <img src="./img/Полка22.png" alt="Полка2">
+                <div class="content-block">
                     <h3>КАК ЭТО РАБОТАЕТ?</h3>
                     <img src="./img/Line 2.png" alt="Line2">
-                    <p>Комплекс, оснащенный специальными сенсорами,</br>сканирует дорожное полотно, собирая данные о его состоянии.</br>Полученная информация передается на программную часть, где</br>формируются карты качества дорожного покрытия</p>
+                    <p>Комплекс, оснащенный специальными сенсорами,<br>сканирует дорожное полотно, собирая данные о его состоянии.<br>Полученная информация передается на программную часть, где<br>формируются карты качества дорожного покрытия</p>
                 </div>
             </div>
         </div>
@@ -49,17 +41,17 @@
                 <div class="whiteblock">
                     <img src="./img/Проблемы/ico_truck.png" alt="map">
                     <h3>Ненадежность грузоперевозок</h3>
-                    <p>Опасная грузоперевозка</br>может значительно</br>увеличить расходы на</br>возмещение поврежденного</br>товара</p>
+                    <p>Опасная грузоперевозка<br>может значительно<br>увеличить расходы на<br>возмещение поврежденного<br>товара</p>
                 </div>
                 <div class="whiteblock whiteblock-2">
                     <img src="./img/Проблемы/ico_money.png" alt="money">
                     <h3>Большие затраты на логистику</h3>
-                    <p>При долгосрочной</br>перевозке грузов траты на</br>топливо составляют</br>половину стоимости</br>логистических операций</p>
+                    <p>При долгосрочной<br>перевозке грузов траты на<br>топливо составляют<br>половину стоимости<br>логистических операций</p>
                 </div>
                 <div class="whiteblock">
                     <img src="./img/Проблемы/ico_map.png" alt="truck">
                     <h3>Отсутствие актуальных маршрутов</h3>
-                    <p>Подбор актуальных</br>маршрутов с наилучшим</br>состоянием дорожного</br>покрытия могут сэкономить</br>общее время в пути</p>
+                    <p>Подбор актуальных<br>маршрутов с наилучшим<br>состоянием дорожного<br>покрытия могут сэкономить<br>общее время в пути</p>
                 </div>
             </div>
         </div>
@@ -67,16 +59,95 @@
             <div class="content-block4">
                 <img src="./img/Преимущества/background.png" alt="background">
                 <div class="beta-cont">
-                    <div class="line1">
+                    <div class="line">
                         <h4>Безопасность</h4>
                         <h4>Точность</h4>
                     </div>
-                    <div class="line2">
+                    <div class="line">
                         <h4>Экономичность</h4>
                         <h4>Актуальность</h4>
+                    </div>
+                    <div id="advantages_grid">
+                         <!-- First column  -->
+                        <p style="grid-row: 1; grid-column: 1;">
+                            Следуя рекомендованным маршрутам,<br>
+                            Вы снижаете риск аварий и<br>
+                            повреждений груза, что делает<br>
+                            Вашу поездку безопаснее.
+                        </p>
+                        <hr style="left: 6vw;">
+                        <p style="grid-row: 3; grid-column: 1;">
+                            Использование нашего комплекса -<br>
+                            выгодное решение. Он стоит<br>
+                            намного меньше, чем топливо и<br>
+                            время, которые Вы сэкономите<br>
+                            благодаря оптимальным<br>
+                            маршрутам. 
+                        </p>
+                         <!-- Second column -->
+                        <img style="grid-row: 1; grid-column: 2;" class="top left" src="./img/Преимущества/icon_task.png" alt="task">
+                        <img style="grid-row: 3; grid-column: 2;" class="bottom left" src="./img/Преимущества/icon_task.png" alt="task">
+                         <!-- Third column  -->
+                          <p style="grid-row: 1; grid-column: 3;" class="big top">БЭ</p>
+                          <p style="grid-row: 3; grid-column: 3;" class="big bottom">ТА</p>
+                         <!-- Fourth column  -->
+                        <img style="grid-row: 1; grid-column: 4;" class="top right" src="./img/Преимущества/icon_task.png" alt="task">
+                        <img style="grid-row: 3; grid-column: 4;" class="bottom right" src="./img/Преимущества/icon_task.png" alt="task">
+                         <!-- Fifth column  -->
+                        <p style="grid-row: 1; grid-column: 5;" class="right">
+                            Датчик фиксирует даже незначительные<br>
+                            изменения, чтобы карта дорожного<br>
+                            полотна соответствовала реальному<br>
+                            состоянию дороги
+                        </p>
+                        <p style="grid-row: 3; grid-column: 5;" class="right">
+                            Сбор информации со всех основных<br>
+                            транспортных участков  происходит<br>
+                            24/7. Благодаря этому Вы всегда будете<br>
+                            иметь актуальную информацию о самом<br>
+                            эффективном маршруте. 
+                        </p>
+                        <hr style="left: 2vw;">
                     </div>
                 </div>
             </div>
         </div>
+        <div class="roadmap">
+            <img src="./img/Роадмап/background.png" alt="background">
+            <img src="./img/Роадмап/roadmap.png" alt="road">
+            <div class="step-block step-block1">
+                <h2>Шаг 1</h2>
+                <h3>Узнайте больше!</h3>
+                <p>Хотите избежать неожиданных<br>проблем на дороге? Узнайте все о<br>нашем комплексе, который<br>отслеживает качество дорог и<br>обеспечивает безопасность ваших<br>поездок.</p>
+            </div>
+            <div class="step-block step-block2">
+                <h2>Шаг 2</h2>
+                <h3>Оставьте<br>заявку на сайте</h3>
+                <p>Наши специалисты<br>свяжутся с вами и<br>помогут разобрать все<br>нюансы, а также<br>предложат наилучший <br>вариант. </p>
+            </div>
+            <div class="step-block step-block3">
+                <h2>Шаг 3</h2>
+                <h3>Внедрение<br>комлекса</h3>
+            </div>
+            <div class="step-block step-block4">
+                <h2>Шаг 4</h2>
+                <h3>В путь!</h3>
+                <p>Пользуйтесь всеми<br>возможностями<br>комплекса:<br>отслеживайте качество<br>дорог, экономьте на<br>времени и бензине,<br>делайте безопаснее ваш<br>маршрут.</p>
+            </div>
+            <div class="step-block step-block5">
+                <h2>Шаг 5</h2>
+                <h3>Наслаждайтесь!</h3>
+                <p>С нашим комплексом<br>каждая дорога станет<br>Вашей!</p>
+            </div>
+            <div class = "triangle-cont">
+                <img src="./img/Роадмап/triangle2.png" alt="triangle_left">
+                <img src="./img/Роадмап/triangle1.png" alt="triangle_right">
+            </div>
+        </div>
+        <!-- <div class = "our-team">
+            ------ git add *
+            ------ git commit -m 'name'
+            ------ git push origin develop
+        </div> -->
     </body>
 </html>

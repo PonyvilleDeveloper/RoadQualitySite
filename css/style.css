@@ -9,7 +9,7 @@ img[alt='logo'] {
 }
 
 div#main {
-    height: auto;
+    height: 56vw;
 }
 
 article:nth-of-type(1) {
@@ -44,8 +44,8 @@ a#quick_order {
 }
 
 /*second page styles*/
-/*this is a shit epta, but coolest shit what i see ever*/
 .page2 {
+/*this is a shit epta, but coolest shit what i seen ever*/
     position: relative;
     border-top: 10px solid transparent;
     border-image: linear-gradient(to right, #7664b6 0%, #937fd9 7%, #6856a9 20%, #5e5778 34%, white 35.75%);
@@ -113,33 +113,20 @@ a#quick_order {
     z-index: 1;
 }
 
-.content-block-1 h3 {
-    top: 2.8vw;
+div.content-block {
+    margin: 5vw 0;
+    padding-top: 3vw;
 }
 
-.content-block-1 p {
+div.content-block * {
+    margin: 0;
+}
+
+div.content-block p {
     font-weight: 300;
     font-size: 2.1vw;
     right: 2.5vw;
-    top: -2.0vw;
     line-height: 2.4vw;
-}
-
-.content-block-2 {
-    top: -2.2vw;
-    z-index: 1;
-}
-
-.content-block-2 h3{
-    top: 3vw;
-}
-
-.content-block-2 p {
-    font-weight: 300;
-    font-size: 2.1vw;
-    right: 2.5vw;
-    top: -1.5vw;
-    line-height: 2.2vw;
 }
 
 /*third page styles*/
@@ -149,7 +136,7 @@ a#quick_order {
     margin-bottom: 100px;
 }
 
-.page3 img[alt = "wave-line"] {
+.page3 img[alt="wave-line"] {
     right: 0;
     top: 4vw;
     position: absolute;
@@ -212,6 +199,7 @@ a#quick_order {
 .page4 {
     margin-top: 300px;
     position: relative;
+    height: 1080px;
 }
 
 .page4 img[alt = "background"] {
@@ -222,4 +210,187 @@ a#quick_order {
 
 .beta-cont {
     text-align: center;
+    font-size: 2.5vw;
+    padding-top: 70px;
+}
+
+.beta-cont h4 {
+    font-weight: bold;
+    color: white;
+    margin: 0;
+}
+
+.beta-cont .line {
+    display: flex;
+    gap: 32vw;
+}
+
+.beta-cont .line:nth-child(1) {
+    left: 10vw;
+}
+
+.beta-cont .line:nth-child(2) {
+    top: -1.5vw;
+    gap: 25vw;
+    left: 32vw;
+}
+
+div#advantages_grid {
+    display: grid;
+    grid-template-columns: 37% auto auto auto 37%;
+    grid-template-rows: auto 8% auto;
+    margin-top: 3vw;
+}
+
+div#advantages_grid hr {
+    background-color: white;
+    width: 80%;
+    height: 2px;
+    border: none;
+    grid-column: span 2;
+    grid-row: 2;
+}
+
+div#advantages_grid hr:nth-of-type(2) {
+    grid-column-start: 4;
+    grid-column-end: 6;
+}
+
+div#advantages_grid * {
+    color: white;
+    line-height: 2.4vw;
+    font-weight: 100;
+    font-size: 1.75vw;
+    margin: 0;
+    padding: 0;
+    align-self: center;
+}
+
+p.right {
+    text-align: left;
+}
+
+div#advantages_grid p.big {
+    font-weight: 700;
+    font-size: 10vw;
+    justify-self: center;
+    margin: 2vw 0;
+}
+
+div#advantages_grid .top {
+    align-self: end;
+}
+
+div#advantages_grid .bottom {
+    align-self: start;
+}
+
+div#advantages_grid img[alt='task'] {
+    width: 50%;
+    margin: 10px;
+}
+
+div#advantages_grid img.left {
+    justify-self: end;
+}
+
+div#advantages_grid img.right {
+    justify-self: start;
+}
+
+/* roadmap styles */
+
+.roadmap {
+    position: relative;
+}
+
+.roadmap img[alt="backgorund"] {
+    position: absolute;
+    z-index: 1;
+}
+
+.roadmap img[alt="road"] {
+    position: absolute;
+    top: 5vw;
+    left: 0;
+    z-index: 4;
+    height: 100vw;
+}
+
+.step-block {
+    color: white;
+    position: absolute;
+    z-index: 4;
+    top: 0;
+}
+
+.step-block h2 {
+    font-weight: 900;
+    font-size: 5.2vw;
+    margin: 0;
+    top:1.5vw;
+}
+
+.step-block h3 {
+    font-weight: 700;
+    font-size: 3vw;
+    margin: 0;
+    line-height: 2.3vw;
+    top: 1vw;
+}
+
+.step-block p {
+    font-weight: 200;
+    font-size: 2vw;
+    line-height: 2vw;
+    top: 2vw;
+    margin: 0;
+}
+.step-block1 {
+    top: 5vw;
+    left: 24vw;
+}
+
+.step-block2 * {
+    text-align: left;
+}
+.step-block2 {
+    top: 22vw;
+    right: 6vw;
+}
+
+.step-block3 {
+    top: 35vw;
+    left: 39vw;
+}
+
+.step-block4 {
+    top: 52vw;
+    left: 6vw;
+}
+
+.step-block5 *{
+    text-align: left;
+}
+
+.step-block5 {
+    top: 76vw;
+    left: 44vw;
+}
+
+.triangle-cont {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    top: 83.99%;
+}
+
+.roadmap img[alt="triangle_left"] {
+    top: 1.2vw;
+    width: 30vw;
+}
+
+.roadmap img[alt="triangle_right"] {
+    width: 45vw;
 }

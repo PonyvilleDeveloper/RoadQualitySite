@@ -201,8 +201,25 @@ a#quick_order {
 }
 
 .whiteblock img {
-    width: 120px;
+    width: 6.5vw;
     position: absolute;
     left: -6%;
     top: -6%;
+}
+
+/* page 4 styles */
+
+.page4 {
+    margin-top: 300px;
+    position: relative;
+}
+
+.page4 img[alt = "background"] {
+    position: absolute;
+    top:0;
+    left:0;
+}
+
+.beta-cont {
+    text-align: center;
 }

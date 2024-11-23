@@ -47,7 +47,7 @@ a#quick_order {
 .page2 {
 /*this is a shit epta, but coolest shit what i seen ever*/
     position: relative;
-    border-top: 10px solid transparent;
+    border-top: 0.7vw solid transparent;
     border-image: linear-gradient(to right, #7664b6 0%, #937fd9 7%, #6856a9 20%, #5e5778 34%, white 35.75%);
     -moz-border-image: linear-gradient(to right, #7664b6 0%, #937fd9 7%, #6856a9 20%, #5e5778 34%, white 35.75%);
     -webkit-border-image: linear-gradient(to right, #7664b6 0%, #937fd9 7%, #6856a9 20%, #5e5778 34%, white 35.75%);
@@ -159,7 +159,7 @@ div.content-block p {
     width: 25vw;
     background-color: rgb(255, 255, 255, 0.5);
     border-radius: 1.5vw;
-    box-shadow: 0px 15px 30px rgb(0, 0, 0, 0.4);
+    box-shadow: 0 0.6vw 1.3vw rgb(0, 0, 0, 0.4);
     backdrop-filter: blur(5px);
     z-index:1;
 }
@@ -239,7 +239,7 @@ div#advantages_grid {
 div#advantages_grid hr {
     background-color: white;
     width: 80%;
-    height: 2px;
+    height: 0.1vw;
     border: none;
     grid-column: span 2;
     grid-row: 2;
@@ -281,7 +281,7 @@ div#advantages_grid .bottom {
 
 div#advantages_grid img[alt='task'] {
     width: 50%;
-    margin: 10px;
+    margin: 0.5vw;
 }
 
 div#advantages_grid img.left {
@@ -453,5 +453,77 @@ If they don't, they are SHITcoders*/
     height: 20vw;
     object-fit: cover;
     border-radius: 1.5vw;
-    margin: 0 20px;
+    margin: 0 0.5vw 0 0.5vw;
+}
+
+.nav-container {
+    position: relative;
+    display: flex;
+    top: -66vw;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 8vw 0 8vw;
+}
+
+.nav-button {
+    padding: 1vw;
+    border-radius: 5vw;
+    width: 6vw;
+    background: none;
+    border: none;
+}
+
+.nav-button:hover {
+    background: rgb(0, 0, 0, 0.3);
+    filter: contrast(200%);
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.nav-button:active {
+    box-shadow: 0.1vw 0.1vw 0.1vw black;
+    filter: contrast(50%);
+    transition: 0.1s;
+}
+
+/* formA styles */
+
+div#form h1 {
+    margin: 0 0 0 10vw;
+}
+
+div#form h1 + p {
+    margin: 0 0 0 20vw;
+}
+
+div#form * {
+    width: fit-content;
+}
+
+form {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 5px;
+    margin-left: 10vw;
+    margin-top: 4vw;
+}
+
+div#form form * {
+    border: none;
+    padding: 5px;
+    border-radius: 0.7vw;
+    margin: 5px;
+    text-align: left;
+    width: 20vw;
+    background-color: #ADADAD;
+}
+
+form input::placeholder {
+    color: black;
+}
+
+div#form form input[type='submit'] {
+    text-align: center;
 }

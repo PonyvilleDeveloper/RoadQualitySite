@@ -38,8 +38,8 @@ p {
 a#quick_order {
     font-weight: 700;
     font-size: 2.5vw;
-    border: 4px solid #C393FF;
-    border-radius: 20px;
+    border: 0.3vw solid #C393FF;
+    border-radius: 1.5vw;
     padding: 1.0vw 4.5vw;
 }
 
@@ -67,7 +67,7 @@ a#quick_order {
     color: #5344E1;
     margin-top: 0;
     margin-bottom: 1.0vw;
-    padding-top: 100px;
+    padding-top: 5vw;
 }
 
 .container{
@@ -75,11 +75,14 @@ a#quick_order {
     top: -3vw;
 }
 
-.container h3{
+.content-block h3 {
     font-weight: 800;
     font-size: 2.6vw;
     right: 2.5vw;
     top: 0vw;
+    text-decoration: underline;
+    text-underline-offset: 0.5vw;
+    /*МЫ ПОБЕДИЛИ ЕБУЧИЕ ПИКСЕЛИ!!!*/
 }
 
 .container img[alt="Полка1"]{
@@ -94,18 +97,6 @@ a#quick_order {
     position: absolute;
     right: -3%;
     width: 80.0vw;
-}
-
-.container img[alt="Line1"] {
-    top: -0.5vw;
-    right: 1.5vw;
-    width: 25vw;
-}
-
-.container img[alt="Line2"] {
-    top: -0.3vw;
-    right: 1.5vw;
-    width: 33vw;
 }
 
 .content-block-1 {
@@ -133,7 +124,7 @@ div.content-block p {
 
 .page3 {
     position: relative;
-    margin-bottom: 100px;
+    margin-bottom: 2vw;
 }
 
 .page3 img[alt="wave-line"] {
@@ -164,10 +155,10 @@ div.content-block p {
 }
 
 .whiteblock:not(h3, p) {
-    padding: 80px 22px 0 22px;
+    padding: 4vw 1.5vw 0 1.5vw;
     width: 25vw;
     background-color: rgb(255, 255, 255, 0.5);
-    border-radius: 30px;
+    border-radius: 1.5vw;
     box-shadow: 0px 15px 30px rgb(0, 0, 0, 0.4);
     backdrop-filter: blur(5px);
     z-index:1;
@@ -197,21 +188,24 @@ div.content-block p {
 /* page 4 styles */
 
 .page4 {
-    margin-top: 200px;
+    margin-top: 10vw;
     position: relative;
-    height: 56vw;
 }
 
-.page4 img[alt = "background"] {
+.page4 img[alt="background"] {
     position: absolute;
     top:0;
     left:0;
 }
 
+div.content-block4 {
+    margin-bottom: 4vw;
+}
+
 .beta-cont {
     text-align: center;
     font-size: 2.5vw;
-    padding-top: 70px;
+    padding-top: 4vw;
 }
 
 .beta-cont h4 {
@@ -271,7 +265,7 @@ p.right {
 }
 
 div#advantages_grid p.big {
-    font-weight: 700;
+    font-weight: 800;
     font-size: 10vw;
     justify-self: center;
     margin: 2vw 0;
@@ -302,8 +296,8 @@ div#advantages_grid img.right {
 
 .roadmap {
     position: relative;
-    top: -13.4vw;
-    border-top: 20px solid white;
+    border-top: 0.5vw solid white;
+    /*px is SHIT, remember it, kids*/
 }
 
 .roadmap img[alt="backgorund"] {
@@ -402,7 +396,7 @@ div#advantages_grid img.right {
 
 .our-team {
     position: relative;
-    top: -13.8vw;
+    top: -0.5vw;
 }
 
 .our-team img[alt="background"] {
@@ -412,20 +406,24 @@ div#advantages_grid img.right {
 .our-team img[alt = "logoteam"] {
     position: absolute;
     z-index: 1;
-    top : 4vb;
+    top : 2.5vw;
     left: 28vw;
     width: 30vw;
 }
 
 .cards-block{
-    position: absolute;
+    position: relative;
     display: flex;
     justify-content: space-around;
     margin-left: 15vw;
     margin-right: 15vw;
     left: 0;
     right: 0;
-    top: 20vw;
+    top: -36vw;
+}
+
+.card-container {
+    width: min-content;
 }
 
 .card-container h3{
@@ -444,9 +442,16 @@ div#advantages_grid img.right {
     top: -1vw;
 }
 
-.cards-block img{
+/*vw is IMBA.
+All progers must use vw.
+If they don't, they are SHITcoders*/
+
+/* vw {like: yes;}*/
+
+.card-container img {
     width: 18vw;
     height: 20vw;
     object-fit: cover;
-    border-radius: 30px;
+    border-radius: 1.5vw;
+    margin: 0 20px;
 }

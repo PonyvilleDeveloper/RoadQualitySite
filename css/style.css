@@ -197,9 +197,9 @@ div.content-block p {
 /* page 4 styles */
 
 .page4 {
-    margin-top: 300px;
+    margin-top: 200px;
     position: relative;
-    height: 1080px;
+    height: 56vw;
 }
 
 .page4 img[alt = "background"] {
@@ -302,6 +302,8 @@ div#advantages_grid img.right {
 
 .roadmap {
     position: relative;
+    top: -13.4vw;
+    border-top: 20px solid white;
 }
 
 .roadmap img[alt="backgorund"] {
@@ -384,6 +386,7 @@ div#advantages_grid img.right {
     justify-content: space-between;
     width: 100%;
     top: 83.99%;
+    z-index: 4;
 }
 
 .roadmap img[alt="triangle_left"] {
@@ -393,4 +396,57 @@ div#advantages_grid img.right {
 
 .roadmap img[alt="triangle_right"] {
     width: 45vw;
+}
+
+/* team page styles */
+
+.our-team {
+    position: relative;
+    top: -13.8vw;
+}
+
+.our-team img[alt="background"] {
+    z-index: 0;
+}
+
+.our-team img[alt = "logoteam"] {
+    position: absolute;
+    z-index: 1;
+    top : 4vb;
+    left: 28vw;
+    width: 30vw;
+}
+
+.cards-block{
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    left: 0;
+    right: 0;
+    top: 20vw;
+}
+
+.card-container h3{
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    font-size: 2.3vw;
+    top: -0.5vw;
+}
+
+.card-container p{
+    text-align: center;
+    color: white;
+    font-size: 1.5vw;
+    font-weight: 100;
+    top: -1vw;
+}
+
+.cards-block img{
+    width: 18vw;
+    height: 20vw;
+    object-fit: cover;
+    border-radius: 30px;
 }

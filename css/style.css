@@ -2,7 +2,7 @@
 @import url('./common.css');
 
 html {
-    scroll-behavior: smooth;    
+    scroll-behavior: smooth;
 }
 
 img[alt='logo'] {

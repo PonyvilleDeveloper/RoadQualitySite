@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 @import url('./common.css');
 
+html {
+    scroll-behavior: smooth;    
+}
+
 img[alt='logo'] {
     position: absolute;
     left: 11%;
@@ -637,6 +641,85 @@ div#form hr {
     border: none;
     border-radius: 0.3vw;
     background-color: white;
+}
+
+/* footer styles */
+
+footer.footer {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    top:-15vw;
+    color: white;
+    font-size: 1.2vw;
+    height: 10vw;
+    margin-top: 1vw;
+}
+
+.footer .left-content h3{
+    margin: 0;
+    text-align: left;
+}   
+
+.footer .left-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+.footer .right-block .right-content {
+    margin-bottom: 2vw;
+}
+
+.footer .right-block *{
+    margin: 0;
+}
+
+.footer .right-content h3{
+    margin-bottom: 0.8vw;
+}
+
+.footer .right-block .right-content a{
+    padding: 0.5vw;
+    font-weight: 900;
+    font-size: 1.3vw;
+    color: black;
+    background-color: #27a7e7;
+    border-radius: 5vw;
+}
+
+.footer .right-block .right-content .vk{
+    background-color: #0077FF;
+    margin-right: 0.5vw;
+}
+
+.footer .right-block .right-content a:hover {
+    filter: brightness(120%);
+    transition: 0.4s;
+}
+
+.footer .right-block .right-content a:active {
+    filter: brightness(80%);
+    font-size: 1.2vw;
+    transition: 0.2s;
+}
+
+.footer .right-block .right-content a.tg:active {
+    margin-right: 0.1vw;
+}
+
+.footer .right-block .copyright {
+    display: flex;
+    align-items: center;
+    font-size: 1vw;
+    right: -6vw;
+    line-height: 1vw;
+    margin-top: 3vw;
+}
+
+.footer .right-block .copyright .c {
+    font-size: 3vw;
+    margin-right: 0.5vw;
 }
 
 /* media styles */

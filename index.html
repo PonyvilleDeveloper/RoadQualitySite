@@ -5,8 +5,9 @@
         <link rel="stylesheet" href="./css/style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Road Quality</title>
+        <script src="./js/photo_slide.js"></script>
     </head>
-    <body>
+    <body onload="show_cards()">
         <div id="main">
             <img src="./img/Фон главной.png" alt="main-background">
             <img src="./img/Лого.png" alt="logo">
@@ -145,35 +146,35 @@
         <div class = "our-team">
             <img src="./img/Команда/background.png" alt="background">
             <img src="./img/Команда/Logo.png" alt="logoteam">
-            <div class="cards-block">
-                <div class="card-container" >
-                    <img src="./img/Команда/женя.png" alt="Photo">
+            <div class="cards-block" id="team_block">
+                <div class="card-container">
+                    <img src="https://sh6-cherepovec-r19.gosweb.gosuslugi.ru/netcat_files/8/148/ed_6shutterstock_151265393_1.jpg" alt="Photo">
                     <h3>Михаил Баранов</h3>
                     <p>Team Lead</p>
                 </div>
                 <div class="card-container">
                     <img src="./img/Команда/Антон.jpg" alt="Photo">
                     <h3>Крутов Антон</h3>
-                    <p>Разработчик/Тестировщик<br>программной части продукта</p>
+                    <p>Разработчик/Тестировщик<br>программной части<br>продукта</p>
                 </div>
                 <div class="card-container">
-                    <img src="./img/Команда/женя.png" alt="Photo">
+                    <img src="https://sun9-41.userapi.com/impg/Wy2vU3wdD9g6q0Y7KGPTOc6ues9NNpKKbBlVPA/RF28oZq1yhI.jpg?size=564x801&quality=95&sign=06eca7b12ca13fac57618f9d694f88cf&type=album" alt="Photo">
                     <h3>Воробьев Олег</h3>
                     <p>Технический писатель</p>
                 </div>
-                <!-- 
+                
                 <div class="card-container">
-                    <img src="./img/Команда/женя.png" alt="Photo">
+                    <img src="https://sun154-1.userapi.com/impg/Q8shdk_IzU6Bwbs4vRshDRv7zRuWCZpIY2JxHg/9aOxlQUvKhI.jpg?size=1020x766&quality=96&sign=331ae931120627116e0fd07b1dec182e&type=album" alt="Photo">
                     <h3>Егоров Арсений</h3>
                     <p>Разработчик<br>аппаратной части<br>продукта</p>
                 </div>
                 <div class="card-container">
-                    <img src="./img/Команда/Свят.jpg" alt="Photo">
+                    <img src="https://sun9-38.userapi.com/impg/yPpw9i4dOSsX-J7xgXHLwKNboH-BBJU0yyK5rA/lJPHFMGii2o.jpg?size=1442x2160&quality=95&sign=409ca6735f17204c19e0cea908affb28&type=album" alt="Photo">
                     <h3>Кузин Святослав</h3>
                     <p>Разработчик<br>программной части<br>продукта</p>
                 </div>
                 <div class="card-container">
-                    <img src="./img/Команда/женя.png" alt="Photo">
+                    <img src="https://sun9-52.userapi.com/impg/t83cSnRJLLRD5EP9nmh_J-iKboTtmsVvYu3K5Q/ThihZOOtLhk.jpg?size=2560x1920&quality=95&sign=a30b74fb58db3f017de4b91f4e1dfae0&type=album" alt="Photo">
                     <h3>Законнов Артемий</h3>
                     <p>UI/UX Дизайнер, frontend<br>разработчик</p>
                 </div>
@@ -182,14 +183,14 @@
                     <h3>Бычков Евгений</h3>
                     <p>Ответственный за<br>оформление паспорта<br>проекта</p>
                 </div>
-                -->
+               
             </div>
             <nav class = "nav-container">
-                <button  class = "nav-button" onclick="" type="button">
+                <button  class="nav-button" onclick="left_click()" type="button">
                     <img src="./img/Команда/arrow left.png" alt="arrow-left">
                 </button>
 
-                <button class =  "nav-button" onclick="" type="button">
+                <button class="nav-button" onclick="right_click()" type="button">
                     <img src="./img/Команда/arrow right.png" alt="arrow-left">
                 </button>
             </nav>
@@ -200,13 +201,14 @@
                 <h1>ОСТАВЬТЕ ЗАЯВКУ</h1>
                 <p>На интеграцию системы в Ваш бизнес!</p>
             </div>
-            <form action="" method="post">
+            <form action="/" method="get">
                 <input placeholder="ФИО*" type="text" required>
                 <input placeholder="Наименование организации*" type="text" required>
                 <input placeholder="E-mail*" type="email" required>
                 <input placeholder="Номер для связи*" type="tel" required>
-                <input placeholder="Отправить" type="submit">
+                <input placeholder="Отправить" type="submit" onclick="alert('Пасиба')">
             </form>
+            <hr>
             <img src="./img/Forma/A_box.png" alt="A_box">
         </div>
     </body>

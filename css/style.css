@@ -43,6 +43,16 @@ a#quick_order {
     padding: 1.0vw 4.5vw;
 }
 
+a#quick_order:hover {
+    filter: brightness(120%);
+    transition: 0.4s;
+}
+
+a#quick_order:active {
+    font-size: 2.4vw;
+    margin-right: 0.3vw;
+}
+
 /*second page styles*/
 .page2 {
 /*this is a shit epta, but coolest shit what i seen ever*/
@@ -125,6 +135,7 @@ div.content-block p {
 .page3 {
     position: relative;
     margin-bottom: 2vw;
+    height: 56.3vw;
 }
 
 .page3 img[alt="wave-line"] {
@@ -188,8 +199,9 @@ div.content-block p {
 /* page 4 styles */
 
 .page4 {
-    margin-top: 10vw;
+    margin-top: 5vw;
     position: relative;
+    height: 43vw;
 }
 
 .page4 img[alt="background"] {
@@ -412,7 +424,7 @@ div#advantages_grid img.right {
     width: 30vw;
 }
 
-.cards-block{
+.cards-block {
     position: relative;
     display: flex;
     justify-content: space-around;
@@ -421,10 +433,12 @@ div#advantages_grid img.right {
     left: 0;
     right: 0;
     top: -36vw;
+    overflow-x: hidden;
 }
 
 .card-container {
     width: min-content;
+
 }
 
 .card-container h3{
@@ -435,7 +449,7 @@ div#advantages_grid img.right {
     top: -0.5vw;
 }
 
-.card-container p{
+.card-container p {
     text-align: center;
     color: white;
     font-size: 1.5vw;
@@ -454,16 +468,15 @@ If they don't, they are SHITcoders*/
     height: 20vw;
     object-fit: cover;
     border-radius: 1.5vw;
-    margin: 0 1vw 0 1vw;
+    margin: 0 2.5vw;
 }
 
 .nav-container {
     position: relative;
     display: flex;
-    top: -63vw;
-    display: flex;
+    top: -66vw;
     justify-content: space-between;
-    margin: 0 8vw 0 8vw;
+    margin: 0 8vw;
 }
 
 .nav-button {
@@ -492,6 +505,8 @@ If they don't, they are SHITcoders*/
 div#form {
     position: relative;
     top: -1.03vw;
+    height: 71vw;
+    overflow: hidden;
 }
 
 div#form .title-form {
@@ -545,11 +560,12 @@ div#form form * {
     padding: 0.3vw;
     border-radius: 1.7vw;
     margin: 0.2vw;
-    font-size: 2vw;
+    font-size: 1.5vw;
     text-align: left;
     width: 31vw;
     height: 4vw;
     background-color: #ADADAD;
+    transition: 0.5s;
 }
 
 div#form form *:nth-child(5) {
@@ -557,11 +573,9 @@ div#form form *:nth-child(5) {
 }
 
 div#form input::placeholder {
-    display: flex;
-    color: black;
-    padding-left: 1.5vw;
     font-size: 1.6vw;
     color: #444444;
+    left: -4vw;
 }
 
 div#form input:focus{
@@ -579,12 +593,16 @@ div#form input:active {
     font-size: 2vw;
 }
 
+div#form input:not(input[type='submit']) {
+    padding-left: 2vw;
+}
+
 div#form form input[type='submit'] {
     text-align: center;
     background: #6856B6;
     color: white;
     font-weight: 800;
-    font-size: 2.2vw;
+    font-size: 2vw;
     width: 25vw;
 }
 
@@ -596,6 +614,7 @@ div#form form input[type='submit']:hover {
 
 div#form form input[type='submit']:active {
     filter: brightness(80%);
+    font-size: 1.8vw;   
     transition: 0.1s;
 }
 
@@ -605,6 +624,19 @@ div#form img[alt = "A_box"] {
     top:-90vw;
     width: 40vw;
     right: 5vw;
+}
+
+div#form hr {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 56.5vw;
+    width: 80%;
+    height: 0.2vw;
+    border: none;
+    border-radius: 0.3vw;
+    background-color: white;
 }
 
 /* media styles */

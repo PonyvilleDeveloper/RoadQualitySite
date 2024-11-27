@@ -531,12 +531,12 @@ div#form h1 {
 div#form p {
     color: #AEAEAE;
     font-weight: 300;
-    top: -0.8vw;
-    font-size: 2.8vw;
+    top: -0.9vw;
+    font-size: 2.2vw;
 }
 
 div#form h1 + p {
-    margin: 0 0 0 19vw;
+    margin: 0 0 0 15vw;
 }
 
 div#form * {

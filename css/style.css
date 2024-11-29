@@ -484,6 +484,7 @@ If they don't, they are SHITcoders*/
 }
 
 .nav-button {
+    transition: 0.5s;
     padding: 1vw;
     border-radius: 5vw;
     width: 6vw;
@@ -623,6 +624,7 @@ div#form form input[type='submit']:active {
 }
 
 div#form img[alt = "A_box"] {
+    transition: 0.5s ;
     position: relative;
     z-index: 4;
     top:-90vw;
@@ -630,10 +632,32 @@ div#form img[alt = "A_box"] {
     right: 5vw;
 }
 
+@keyframes size-click{
+    0% {
+        font-size: 2vw;
+    }
+    25% {
+        font-size: 1.9vw;
+        right: 3.5vw;
+    }
+    50% {
+        font-size: 2vw;
+    }
+    75% {
+        font-size: 1.9vw;
+        right: 3.5vw;
+    }
+    100% {
+        font-size: 2vw;
+    }
+}
+
 div#form .click {
     position: absolute;
+    text-align: left;
+    line-height: 1.5vw;
     top: 26vw;
-    right: 5vw;
+    right: 3vw;
     padding: 0.5vw 2vw; 
     background-color: rgb(0, 0, 0, 0.5);
     backdrop-filter: blur(5px);
@@ -641,6 +665,9 @@ div#form .click {
     font-size: 2vw;
     border-radius: 1.3vw 1.3vw 1.3vw 0vw;
     z-index: 5;
+    animation-name: size-click;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
 
 div#form hr {
@@ -656,6 +683,45 @@ div#form hr {
     background-color: white;
 }
 
+dialog#product-photos {
+    position: fixed;
+    transition: 0.5s;
+    flex-direction: column;
+    align-items: center;
+    top: 2vw;
+    z-index: 6;
+    width: fit-content;
+    height: 36vw;
+    overflow-x: scroll;
+    margin: auto;
+    border-radius: 3vw;
+    border: none;
+    padding: 1vw 3vw;
+}
+
+dialog#product-photos img {
+    width: 20vw;
+}
+
+dialog#product-photos button {
+    position: fixed;
+    border: none;
+    border-radius: 0.6vw;
+    background-color: rgb(95, 54, 114);
+    padding: 0.5vw 0.7vw;
+    align-self: end;
+    color: white;
+}
+
+dialog#product-photos::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+div#form img[alt = "A_box"]:hover {
+    width: 38vw;
+    transition: 1s;
+}
 /* footer styles */
 
 footer.footer {

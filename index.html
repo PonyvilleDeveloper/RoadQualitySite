@@ -6,8 +6,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
         <title>Road Quality</title>
         <script src="./js/photo_slide.js"></script>
+        <script src="./js/show_dialog.js"></script>
     </head>
     <body onload="show_cards()">
+        <dialog id="product-photos">
+            <button type="button" onclick="closeDialog()">&#128937;</button>
+            <img src="./img/Forma/device1.png" alt="device">
+            <img src="./img/Forma/device2.png" alt="device">
+            <img src="./img/Forma/device3.png" alt="device">
+            <img src="./img/Forma/device4.png" alt="device">
+        </dialog>        
         <div id="main">
             <img src="./img/Фон главной.png" alt="main-background">
             <img src="./img/Лого.png" alt="logo">
@@ -158,7 +166,7 @@
                     <p>Разработчик/Тестировщик<br>программной части<br>продукта</p>
                 </div>
                 <div class="card-container">
-                    <img src="https://sun9-41.userapi.com/impg/Wy2vU3wdD9g6q0Y7KGPTOc6ues9NNpKKbBlVPA/RF28oZq1yhI.jpg?size=564x801&quality=95&sign=06eca7b12ca13fac57618f9d694f88cf&type=album" alt="Photo">
+                    <img src="https://sun9-17.userapi.com/impg/buN2mV-_6b4ORUJlwqPgqTfQI8TqBVU5PhOUCQ/CO1mqHeKVf0.jpg?size=1620x2160&quality=96&sign=bbac0f85390e2fb2a79965fb0a05fe0d&type=album" alt="Photo">
                     <h3>Воробьев Олег</h3>
                     <p>Технический писатель</p>
                 </div>
@@ -201,7 +209,7 @@
                 <h1>ОСТАВЬТЕ ЗАЯВКУ</h1>
                 <p>На консультацию по процессу интеграции системы!</p>
             </div>
-            <form method="get" onsubmit="alert('Пасиба')">
+            <form method="get" onsubmit="alert('Спасибо за заявку! НАш менеджер с Вами свяжется в скором времени :D')">
                 <input placeholder="ФИО*" type="text" title="" required>
                 <input placeholder="Наименование организации*" title = "Если Вы не Юридическое лицо - поставьте прочерк." type="text" required>
                 <input placeholder="E-mail*" type="email" title="" required>
@@ -209,17 +217,17 @@
                 <input placeholder="Отправить" type="submit">
             </form>
             <hr>
-            <img src="./img/Forma/A_box.png" alt="A_box">
-            <div class = "click">Click on me!</div>
+            <img src="./img/Forma/A_box.png" alt="A_box" onclick="openDialog()">
+            <div class = "click">Кликни, чтобы<br>увидеть прототип!</div>
         </div>
         <footer class="footer">
             <div class="left-content">
                 <h3>&#9993;&#65039;&nbsp;&nbsp;&nbsp;Road.Quality@ya.ru</h3>
-                <h3>&#127968;&nbsp;&nbsp;&nbsp;г. Ярославль, ул. Мандариновая, 155555, д.205А</h3>
+                <h3>&#127968;&nbsp;&nbsp;&nbsp;г. Ярославль, ул. Московский проспект, д.88, 150023</h3>
             </div>
             <div class="right-block">
                 <div class ="right-content">
-                    <h3>+7-(932)-747-73-27</h3>
+                    <h3>+7-(999)-234-27-64</h3>
                     <a href="https://vk.com/mikhail_baranov2000" class = "vk" target="_blank">VK</a>
                     <a href="https://t.me/kjsdlnflkjs" class = "tg" target="_blank">TG</a>
                 </div>
